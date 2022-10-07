@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products - dodnaudu.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="shortcut icon" href="dodnaudu.png">
+<script src="https://kit.fontawesome.com/935b50071a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script src="//code.tidio.co/c2x9elzltpvu8broovjsnddcpzb71skr.js" async></script> 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="dodnaudu.png" width="170px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="50px" height="50px">
+            <img src="menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>       
+        </div>    
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="DrawingCheckout.html">
+            <img src="robloxAvatar.jpeg">
+            <h4>Drawing</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$4.99</p>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="RealPersonCheckout.html">
+            <img src="drawingNo3.jfif">
+            <h4>Real person Drawing</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$5.50</p>
+            </a>
+        </div>
+         <div class="col-4">
+            <a href="AnimationCheckout.html">
+            <img src="minion.png">
+            <h4>FlippaClip animation</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$8.00</p>
+            </a>
+        </div>
+    <div class="col-4">
+            <a href="StreamCheckout.html">
+            <img src="drawingNo1.jpeg">
+            <h4>Stream Overlay</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$6.00 - $11.00</p>
+            </a>
+        </div>
+        </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+    </div>
+    <!-------- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Thanks for visiting us!</h3>
+                    <p>Our mission is to make everybody happy and proud of they're personality</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="dodnaudu.jpeg">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Refund</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Drawer & Animator</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <a href="https://www.instagram.com/nikotinmaize/">
+                            <li>Instagram</li>
+                        </a>
+                        <li>Youtube</li>
+                        <a href="https://www.tiktok.com/@latvijaslauksaimnieciba">
+                            <li>Tiktok</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Website Creator</h3>
+                    <ul>
+                    <a href="https://twitter.com/Chickenbuster1">
+                        <li>Twitter</li>
+                    </a>
+                    <a href="https://www.instagram.com/localtoaster1/">
+                        <li>Instagram</li>
+                    </a>
+                    </ul>
+                    <div class="container"></div>
+            </div>
+        </div>
+        <hr>
+        <p class="Made">Website Made In 2022 August</p>
+    </div>
+    </div>
+
+    <!---- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>

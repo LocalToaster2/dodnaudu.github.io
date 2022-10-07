@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - dodnaudu.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="shortcut icon" href="dodnaudu.png">
+<script src="https://kit.fontawesome.com/935b50071a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="//code.tidio.co/c2x9elzltpvu8broovjsnddcpzb71skr.js" async></script> 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="dodnaudu.png" width="170px">
+                </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="PAproducts.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="50px" height="50px">
+            <img src="menu.png" class="menu-icon" onclick="menuToggle()">
+                </div>
+            </div>
+             <!------ product details -->
+             <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="minion.png" width="100%" id="ProductImg">
+                        
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img src="minion.png" width="100%" class="SmallImg">
+                            </div>
+                                <div class="small-img-col">
+                                    <img src="" width="100%" class="SmallImg">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / FlippaClip Animation</p>
+                        <h1>Animation By Dimitrij#4489</h1>
+                        <h4>$8.00</h4>
+                        <div id="smart-button-container">
+                            <div style="text-align: center;">
+                              <div id="paypal-button-container"></div>
+                            </div>
+                          </div>
+                          <div id="smart-button-container">
+                            <div style="text-align: center;">
+                              <div id="paypal-button-container"></div>
+                            </div>
+                          </div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=AYwKvP06Q0BkovRO3bc13tRi1PXhA51oqB3sfq9RiisDo6M7wopkhf8ia_ugM3C1nQ8A-Hjf9eJ_GLne&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                        <script>
+                          function initPayPalButton() {
+                            paypal.Buttons({
+                              style: {
+                                shape: 'pill',
+                                color: 'silver',
+                                layout: 'vertical',
+                                label: 'paypal',
+                                
+                              },
+                      
+                              createOrder: function(data, actions) {
+                                return actions.order.create({
+                                  purchase_units: [{"description":"Animations","amount":{"currency_code":"EUR","value":8}}]
+                                });
+                              },
+                      
+                              onApprove: function(data, actions) {
+                                return actions.order.capture().then(function(orderData) {
+                                  
+                                  // Full available details
+                                  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                      
+                                  // Show a success message within this page, e.g.
+                                  const element = document.getElementById('paypal-button-container');
+                                  element.innerHTML = '';
+                                  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                      
+                                  // Or go to another URL:  actions.redirect('thank_you.html');
+                                  
+                                });
+                              },
+                      
+                              onError: function(err) {
+                                console.log(err);
+                              }
+                            }).render('#paypal-button-container');
+                          }
+                          initPayPalButton();
+                        </script>
+                        <div class="btn">
+                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="VR3CNNLALFHHQ">
+                                <input type="image" src="click.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="addCart.png" width="200" height="64">
+                                </form>                                
+                        </div>
+                        <form action="https://formsubmit.co/localtoaster123@gmail.com" method="POST">
+                            <h3>This is required to be filled out or we wouldn't know what You want&#8595;</h3>
+                        <br>
+                      <div class="drop-zone-container" name="image">
+                        <div class="drop-zone-row">
+                            <div class="col-md-12">
+                                <div class="uploadOuter">
+                                    <label for="uploadFile" class="btn btn-primary">
+                                        Upload Image
+                                    </label>
+                                    <strong>OR</strong>
+                                <span class="dragBox">
+                                    Drag and Drop Image here
+                                    <input type="file" onChange="dragNdrop(event)"
+                                    ondragover="drag()"
+                                    ondrop="drop()" 
+                                    id="uploadFile" 
+                                    >
+                                </span>
+                                </div>
+                                <div id="preview"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>       
+                    <div class="container">
+                        <input type="text" id="name" name="Name" placeholder="What you want to be called" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="PayPal Email" placeholder="PayPal Email" required>
+                        <input type="text" id="phone" name="Phone number" placeholder="Phone Number (optional)">
+                        <input type="text" id="link" name="Link" placeholder="Link (Drag & Drop Doesn't Work)" required>
+                        <button type="submit" id="btn">Send</button>
+                    </div>
+                </form>
+                    </div>
+        </div>       
+    </div>
+<!-- title -->
+    <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+    </div>
+<!--products-->
+</div>
+    <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="drawingNo1.jpeg">
+            <h4>Stream Overlay</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$6.00-$11.00</p>
+        </div>
+        <div class="col-4">
+            <img src="robloxAvatar.jpeg">
+            <h4>Drawing</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$4.99</p>
+        </div>
+        <div class="col-4">
+            <img src="drawingNo4.jfif">
+            <h4>Real Person Drawing</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$5.50</p>
+        </div>
+    </div>
+</div>
+    <!-------- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Thanks for visiting us!</h3>
+                    <p>Our mission is to make everybody happy and proud of they're personality</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="dodnaudu.jpeg">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Refund</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Drawer & Animator</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <a href="https://www.instagram.com/nikotinmaize/">
+                            Instragram
+                        </a>
+                        <li>Youtube</li>
+                        <a href="https://www.tiktok.com/@latvijaslauksaimnieciba">
+                            <li>TikTok</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Website Creator</h3>
+                    <ul>
+                     <a href="https://twitter.com/Chickenbuster1">
+                        <li>Twitter</li>
+                     </a>
+                     <a href="https://www.instagram.com/localtoaster1/">
+                        <li>Instagram</li>
+                     </a>   
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Made">Website Made In 2022 August</p>
+    </div>
+    </div>
+
+    <!---- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- js for product gallery-->
+    <script>
+        var productImg = document.getElementById("ProductImg");
+        var smallImg = document.getElementsByClassName("SmallImg");
+
+           SmallImg[0].onclick = function()
+           {
+                 ProductImg.src = SmallImg[0].src;
+           }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+    </script>
+
+</body>
+</html>
