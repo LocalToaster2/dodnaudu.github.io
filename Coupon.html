@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-LV">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dodnaudu.com</title>
+    <link rel="stylesheet" href="coupon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="dodnaudu.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/935b50071a.js" crossorigin="anonymous"></script>
+<title>Coupon - dodnaudu.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="coupon-card">
+            <img src="dodnaudu.png" class="logo">
+            <h3>15% coupon for every purchase <br>(20 people can redeem this code)</h3>
+
+            <div class="coupon-row">
+                <span id="cpnCode">L0CAL10%fF</span>
+                <span id="cpnBtn">COPY CODE</span>
+            </div>
+
+            <p>Valid Till: 20 Oct, 2022</p>
+
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+<script>
+
+    var cpnBtn = document.getElementById("cpnBtn");
+    var cpnCode = document.getElementById("cpnCode");
+
+    cpnBtn.onclick = function(){
+        navigator.clipboard.writeText(cpnCode.innerHTML);
+        cpnBtn.innerHTML = "COPIED";
+        setTimeout(function(){
+            cpnBtn.innerHTML = "COPY CODE";
+        }, 3000);
+    }
+
+</script>
+</body>
+</html>
