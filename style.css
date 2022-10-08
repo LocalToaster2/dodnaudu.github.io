@@ -534,7 +534,6 @@ input[type="file"] {
     margin: 20px;
 }
 .glow {
-    font-size: 80px;
     color: #fff;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
