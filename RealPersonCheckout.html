@@ -14,6 +14,14 @@
 <script src="https://kit.fontawesome.com/935b50071a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="PAproducts.html">Products</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    
     <script src="//code.tidio.co/c2x9elzltpvu8broovjsnddcpzb71skr.js" async></script> 
     <div class="container">
         <div class="navbar">
@@ -24,7 +32,6 @@
                 <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="PAproducts.html">Products</a></li>
-                    <li><a href="">About</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -102,6 +109,7 @@
                           }
                           initPayPalButton();
                         </script>
+                        <div id="google_translate_element"></div>
                         <div class="btn">
                         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                           <input type="hidden" name="cmd" value="_s-xclick">
@@ -229,6 +237,21 @@
                 ProductImg.src = SmallImg[1].src;
             }
     </script>
-
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     <script>
+         
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
 </body>
 </html>
