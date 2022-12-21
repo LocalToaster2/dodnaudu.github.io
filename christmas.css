@@ -647,7 +647,7 @@ input[type="file"] {
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, #7158fe, #9d4de6);
+    background: linear-gradient(135deg, white, burlywood);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
