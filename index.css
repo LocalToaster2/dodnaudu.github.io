@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'DynaPuff', cursive;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 50px;
+  float: left;
+}
+
+.gradient-text {
+  margin-left: 250px;
+  background: linear-gradient(to right, cyan, darkblue, rgb(82, 24, 219));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 60px;
+  margin-top: 30px; /* adjust as needed */
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* adjust the right value to your liking */
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.scrolling-images {
+  position: fixed;
+  top: 50%;
+  right: 10px; /* adjust the right value to your liking */
+  transform: translateY(-50%);
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 25px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: white;
+  z-index: 1;
+}
+
+.scrolling-images img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.scrolling-images::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrolling-images::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.scrolling-images::-webkit-scrollbar-track {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.beveled {
+  border-radius: 25px / 50px;
+}
+.btn{
+  display: inline-block;
+  background: #4bbdeb;
+  color:white;
+  padding: 8px 30px;
+  width: 200px;
+  height: 45px;
+  margin-top: 500px;
+  margin-right: 300px;
+  border-radius: 30px;
+  transition: background 0.5s;
+  font-size: 19px;
+}
+
+.btn:hover{
+  background: #1d29cf;
+}
+
+.media {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin-left: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.small-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  margin-top: 200px;
+}
+
+.product-card, .video-card {
+  text-align: center;
+  margin: auto;
+}
+
+.product-card img, .video-card video {
+  width: 100%;
+  max-height: 400px;
+}
+
+.product-card h2, .video-card h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product-card p, .video-card p {
+  margin: 0;
+}
+
+.product-card:hover {
+  transform: translateX(-5px);
+}
+
+.video-card:hover{
+  transform: translateX(-5px);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 220px;
+  }
+  
+  .links a {
+  margin: 0 10px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: color 0.6s;
+  color: black;
+  }
+  
+  .links a:hover {
+  background: linear-gradient(to right, cyan, darkblue, rgb(82, 24, 219));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  }
+  .christmas-button {
+    background-color: green;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    border-radius: 4px; /* Round the corners */
+    transition-duration: 0.4s; /* Add a transition effect */
+    width: 200px;
+    height: 80px;
+  }
+
+.christmas-button:hover {
+    background-color: blue;
+  }
+.logo:hover {
+  cursor: pointer;
+}
